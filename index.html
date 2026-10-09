@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software development portfolio showcasing programming skills and projects.">
+  <title>Software Developer | Portfolio</title>
+  <style>
+    :root {
+      --background: #0b1120;
+      --panel: #111c30;
+      --accent: #60a5fa;
+      --text: #f1f5f9;
+      --muted: #b7c4d8;
+      --border: #27364f;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: #0b1120f5;
+    }
+
+    .logo { font-weight: bold; color: var(--text); }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: var(--muted); font-size: 14px; }
+
+    main { max-width: 1050px; margin: auto; padding: 0 24px; }
+
+    .hero { padding: 95px 0 80px; }
+    .eyebrow { color: var(--accent); font-weight: bold; letter-spacing: 2px; }
+
+    h1 { font-size: clamp(40px, 7vw, 68px); line-height: 1.1; margin: 15px 0; }
+    h2 { font-size: 30px; margin-bottom: 12px; }
+    h3 { margin-top: 0; }
+    p { color: var(--muted); }
+
+    .hero p { max-width: 650px; font-size: 18px; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 7px;
+      background: var(--accent);
+      color: #08111f;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    section { padding: 45px 0; border-top: 1px solid var(--border); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 23px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1c3150;
+      color: #bfdbfe;
+      padding: 4px 9px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin: 4px 3px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      main { padding: 0 20px; }
+      .hero { padding: 65px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">Software Developer</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" style="border-top:0">
+      <div class="eyebrow">SOFTWARE DEVELOPMENT PORTFOLIO</div>
+      <h1>Building ideas<br>into software.</h1>
+      <p>
+        Hello, I'm a software developer focused on building practical
+        applications, solving problems, and learning new technologies.
+        I enjoy turning ideas into useful digital solutions.
+      </p>
+      <div class="buttons">
+        <a class="button" href="#projects">Explore My Projects</a>
+        <a class="button secondary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am developing my skills in software development, application
+        design, and problem-solving. My experience includes building a
+        country-information website with HTML, CSS, and JavaScript in
+        collaboration with another developer, as well as developing an
+        e-commerce application using C#. I am interested in a career as
+        a Programmer Analyst and in contributing to reliable,
+        user-focused software.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p>Languages and technologies I have studied and used in projects.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <span class="tag">Java</span>
+          <span class="tag">C#</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="card">
+          <h3>Data & Systems</h3>
+          <span class="tag">SQL</span>
+          <span class="tag">Linux</span>
+          <span class="tag">AWS Cloud Foundations</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <p>Academic projects demonstrating practical software development skills.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Country Information Website</h3>
+          <p>
+            A team website about a country, created to present information
+            through a structured web interface.
+          </p>
+          <p><strong>Technologies:</strong></p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <p><small>Team project · First-year coursework</small></p>
+        </article>
+        <article class="card">
+          <h3>E-commerce Application</h3>
+          <p>
+            An e-commerce application developed as a programming project,
+            applying C# concepts to an application-focused assignment.
+          </p>
+          <p><strong>Technology:</strong></p>
+          <span class="tag">C#</span>
+          <p><small>Academic project · First-year coursework</small></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Software Development</h3>
+        <p>New Brunswick Community College (NBCC)</p>
+        <p>Program in progress</p>
+        <p>
+          Relevant coursework includes Java, C#, JavaScript, SQL,
+          web development, Linux, and AWS Cloud Foundations.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        I'm interested in software development opportunities,
+        collaboration, and continued learning.
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/" target="_blank"
+        rel="noopener noreferrer">Visit GitHub</a>
+      </p>
+      <p>
+        Replace this line with your professional email address
+        before publishing your portfolio.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Software Development Portfolio · Built with HTML and CSS</p>
+  </footer>
+</body>
+</html>
